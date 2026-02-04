@@ -3,8 +3,9 @@
 //    otherwise, return `false`.
 //    Use TypeScript types to ensure the parameter and return type are properly typed.
 
-function isPalindrome(word) {
-  
+function isPalindrome(word: string): boolean {
+  const reversed = word.split('').reverse().join('');
+  return word === reversed;
 }
 
 // Expected output:

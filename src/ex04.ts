@@ -2,8 +2,8 @@
 //    The function should return the largest number in the array.
 //    Ensure the parameter and return type are typed.
 
-function findMax(numbers) {
-
+function findMax(numbers: number[]): number {
+  return Math.max(...numbers);
 }
 
 // Expected output:
